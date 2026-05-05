@@ -51,7 +51,9 @@ oxidation of silicon using Silvaco Victory Process on NanoHub.
 
 ## Results
 
-### Temperature Sweep
+### Temperature Sweep Results
+
+![Temperature Sweep](Result_Plot/deal_grove_vs_tcad_temp.png)
 
 | Temp (°C) | TCAD (nm) | Deal-Grove (nm) | Error % |
 |---|---|---|---|
@@ -60,7 +62,10 @@ oxidation of silicon using Silvaco Victory Process on NanoHub.
 | 1000 | 31.07 | 31.07 | 0.0 |
 | 1100 | 69.38 | 69.38 | 0.0 |
 
-### Wet vs Dry
+
+### Wet vs Dry Comparison
+
+![Wet vs Dry](Result_Plot/wet_vs_dry_comparison.png)
 
 | Temp (°C) | Dry (nm) | Wet (nm) | Ratio |
 |---|---|---|---|
