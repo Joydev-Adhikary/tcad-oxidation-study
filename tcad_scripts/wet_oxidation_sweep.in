@@ -1,0 +1,39 @@
+go victoryprocess simflag="-p 4"
+
+# --- 800°C wet ---
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+diffuse time=30 temp=800 f.h2o=1
+extract name="wet_800" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=wet_800.str
+
+# --- 900°C wet ---
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+diffuse time=30 temp=900 f.h2o=1
+extract name="wet_900" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=wet_900.str
+
+# --- 1000°C wet ---
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+diffuse time=30 temp=1000 f.h2o=1
+extract name="wet_1000" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=wet_1000.str
+
+# --- 1100°C wet ---
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+diffuse time=30 temp=1100 f.h2o=1
+extract name="wet_1100" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=wet_1100.str
+
+quit
