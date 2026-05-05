@@ -1,0 +1,37 @@
+go victoryprocess simflag="-p 4"
+# TEMP SWEEP — 800C
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+diffuse time=30 temp=800 f.o2=1
+extract name="tox_800" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=tox_800.str
+
+# TEMP SWEEP — 900C
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+diffuse time=30 temp=900 f.o2=1
+extract name="tox_900" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=tox_900.str
+# TEMP SWEEP - 1000C
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+
+diffuse time=30 temp=1000 f.o2=1
+extract name="tox_1000" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=tox_1000.str
+# TEMP SWEEP - 1100C
+init material=silicon depth=1 from="0,0" to="1,1" \
+     gasheight=1 at=0.5 resolution=0.05 \
+     meshdepth=2 flow.dim=2d
+
+diffuse time=30 temp=1100 f.o2=1
+extract name="tox_1100" thickness material="SiO2" \
+        mat.occno=1 x.val=0.5
+export structure=tox_1100.str
+quit
