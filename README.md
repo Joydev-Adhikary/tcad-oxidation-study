@@ -83,3 +83,6 @@ oxidation of silicon using Silvaco Victory Process on NanoHub.
 - Wet/dry thickness ratio of 7-8x explained by H₂O diffusivity
   advantage through SiO₂ network
 - Wet 800°C grows more oxide than dry 1100°C beyond ~40 min
+
+## ​Conclusion
+​This study successfully established a robust simulation framework for the thermal oxidation of silicon using Silvaco TCAD. By systematically varying temperature and ambient conditions, the project provided a quantitative look at the kinetics governing oxide growth, bridging the gap between theoretical semiconductor physics and practical process engineering.
