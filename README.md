@@ -34,15 +34,6 @@ oxidation of silicon using Silvaco Victory Process on NanoHub.
 - Wet oxidation grows 7-8x more oxide than dry at same conditions
 - B constant ratio directly explains thickness ratio
 
-## Key Findings
-
-- Silvaco Victory Process uses internally calibrated Deal-Grove
-  constants 4-6x smaller than original 1965 paper values
-- Linear-to-parabolic transition at t* = A²/4B = 16.15 min at 1000°C
-- Wet/dry thickness ratio of 7-8x explained by H₂O diffusivity
-  advantage through SiO₂ network
-- Wet 800°C grows more oxide than dry 1100°C beyond ~40 min
-
 ## Tools
 
 - Silvaco Victory Process TCAD (NanoHub, DeckBuild 5.2.31.C)
@@ -62,6 +53,16 @@ oxidation of silicon using Silvaco Victory Process on NanoHub.
 | 1000 | 31.07 | 31.07 | 0.0 |
 | 1100 | 69.38 | 69.38 | 0.0 |
 
+### Time Sweep Results
+
+![Time Sweep](Result_Plot/deal_grove_vs_tcad_time.png)
+
+| Time (min) | TCAD (nm) | Deal-Grove (nm) | Error % |
+|---|---|---|---|
+| 10 | 15.96| 12.26 | 30.16 |
+| 30 | 31.07 | 31.07 | 0.0 |
+| 60 | 48.66 | 52.72 | 7.69 |
+| 120 | 78.78 | 85.66 | 8.03 |
 
 ### Wet vs Dry Comparison
 
@@ -73,3 +74,12 @@ oxidation of silicon using Silvaco Victory Process on NanoHub.
 | 900 | 10.86 | 77.36 | 7.1x |
 | 1000 | 31.07 | 259.80 | 8.4x |
 | 1100 | 69.38 | 464.53 | 6.7x |
+
+## Key Findings
+
+- Silvaco Victory Process uses internally calibrated Deal-Grove
+  constants 4-6x smaller than original 1965 paper values
+- Linear-to-parabolic transition at t* = A²/4B = 16.15 min at 1000°C
+- Wet/dry thickness ratio of 7-8x explained by H₂O diffusivity
+  advantage through SiO₂ network
+- Wet 800°C grows more oxide than dry 1100°C beyond ~40 min
