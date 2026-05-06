@@ -19,7 +19,7 @@ oxidation of silicon using Silvaco Victory Process on NanoHub.
 ### 1. Temperature Sweep (Dry Oxidation)
 - Temperature range: 800°C to 1100°C
 - Fixed time: 30 min, dry O₂ (f.o2=1)
-- Back-calculated Deal-Grove rate constants using inverse modelling
+- Back-calculated Deal-Grove rate constants(B) using inverse modelling
 - Identified linear-to-parabolic transition at t* = 16.15 min (1000°C)
 
 ### 2. Time Sweep (Dry Oxidation)
